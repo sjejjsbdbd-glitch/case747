@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>CASE 747 | Mirsel Studio</title>
+<meta name="description" content="CASE 747، یک بازی کارآگاهی نوآر و ترسناک از Mirsel Studio. بیست‌وسه سال بعد از ناپدید شدن پرواز ۷۴۷ از روی رادار، کارآگاه مایک وارن پرونده را دوباره باز می‌کند.">
+<meta name="author" content="Mirsel Studio">
+<style>
+@font-face{font-family:"Vazirmatn";src:url(vazirmatn.woff2) format("woff2");font-weight:100 900;font-display:swap}
+:root{--ground:#0F0F0F;--card:#1B1B1B;--ink:#F1F0EE;--muted:#9C9994;--rule:#2C2C2C;color-scheme:dark;
+--fa:"Vazirmatn",Tahoma,sans-serif;--logo:Georgia,"Times New Roman",serif}
+*{box-sizing:border-box}img{background:color-mix(in srgb,var(--ground),var(--ink) 6%)}
+body{margin:0;background:var(--ground);color:var(--ink);font:15.5px/1.85 var(--fa);padding:10px 16px 64px}
+.wrap{max-width:680px;margin:0 auto}
+.lat{font-family:var(--fa);direction:ltr;unicode-bidi:isolate}
+h1{font:600 clamp(34px,9vw,42px)/1.05 var(--logo);letter-spacing:.06em;margin:28px 0 10px;direction:ltr;text-align:right}
+h1,h2,h3,p,li{text-wrap:pretty}h2,.lede{text-wrap:balance}
+h2{font:800 25px/1.3 var(--fa);margin:52px 0 12px}
+h3{font:700 17px/1.4 var(--fa);margin:0 0 5px}
+.kicker{font:17px/1.6 var(--fa);color:var(--muted);margin:0 0 2px}h1+.kicker{margin-top:0}h2:has(+.kicker){margin-bottom:0}h2+.kicker{margin-bottom:12px}
+.updated{font:13.5px/1.5 var(--fa);color:var(--muted);margin:6px 0 14px}
+.lede{font:500 clamp(18px,4.6vw,21px)/1.65 var(--fa);margin:22px 0 26px}.lede:has(+ul){margin-bottom:8px}.lede:not(.lede~.lede){padding-top:12px}.lede+ul{font-size:16px}.lede+ul li::marker{color:color-mix(in srgb,var(--ink) 50%,transparent)}
+html{scroll-behavior:smooth}
+p{margin:0 0 10px}
+a{color:inherit;text-decoration:underline;text-decoration-thickness:1.5px;text-underline-offset:4px;text-decoration-color:color-mix(in srgb,currentColor 30%,transparent);transition:text-decoration-color .15s}a:hover{text-decoration-color:currentColor}
+.card{background:var(--card);border-radius:20px;padding:14px 16px 18px;margin:10px 0;display:grid;gap:4px}.card h3{font-size:18px;margin-bottom:0}.card h3+.fact{margin-bottom:6px}
+.card.top{padding-top:0;overflow:hidden}
+.card.top video{display:block;width:calc(100% + 32px);max-width:none;margin:0 -16px 10px;aspect-ratio:2.39/1;object-fit:cover;background:#000}
+.card .fact{font-size:15px;color:var(--muted)}
+ol.takeaways{counter-reset:k;list-style:none;padding:0;margin:0 0 30px}
+ol.takeaways>li{counter-increment:k;display:grid;grid-template-columns:30px minmax(0,1fr);padding:14px 0;font-size:16px;line-height:1.8;font-weight:400;color:color-mix(in srgb,var(--muted) 70%,var(--ink))}
+ol.takeaways>li::before{content:counter(k,persian);font:400 21px/1.3 var(--fa);color:var(--ink)}
+ol.takeaways b{display:block;font:700 17px/1.5 var(--fa);color:var(--ink);margin-bottom:3px}
+ul{padding:0;padding-inline-start:20px;margin:0 0 10px}li{margin:0 0 6px}
+.sources{margin-top:44px;font-size:13px;color:var(--muted)}.sources>b{display:block;font:600 16px/1.5 var(--fa);color:var(--ink);margin:0 0 6px;direction:ltr;text-align:right}
+.sources li{margin:0 0 4px}
+footer{margin-top:26px;padding-top:14px;border-top:1px solid var(--rule);font:13px/1.5 var(--fa);color:var(--muted);direction:ltr;text-align:center}
+nav.jump{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:16px 0 26px}nav.jump::before{content:"برو به:";font:500 14px/1 var(--fa);color:var(--muted);margin-inline-end:2px}
+nav.jump a{display:inline-flex;align-items:center;gap:7px;font:14px/1 var(--fa);text-decoration:none;background:color-mix(in srgb,var(--ground),var(--ink) 6%);border-radius:999px;padding:10px 14px;transition:background-color .15s}@media (hover:hover) and (pointer:fine){nav.jump a:hover{background:color-mix(in srgb,var(--ground),var(--ink) 12%)}}nav.jump a::after{content:"";width:5px;height:5px;border-right:1.5px solid var(--muted);border-bottom:1.5px solid var(--muted);transform:translateY(-2px) rotate(45deg)}
+.options{display:grid;gap:12px;margin:22px 0 28px}
+.options>.group{margin:10px 0 -6px}.options>.group:first-child{margin-top:0}
+.group{font:600 16px/1.5 var(--fa);color:var(--ink);margin:26px 0 2px}
+details.opt{background:var(--card);border-radius:20px;overflow:hidden;interpolate-size:allow-keywords;transition:box-shadow .15s}details.opt::details-content{block-size:0;overflow:hidden;transition:block-size .25s ease-out,content-visibility .25s allow-discrete}details.opt[open]::details-content{block-size:auto}details.opt[open]>:not(summary){animation:reveal .25s ease-out}@keyframes reveal{from{opacity:0;transform:translateY(-6px)}}@media (prefers-reduced-motion:reduce){details.opt::details-content{transition:none}details.opt[open]>:not(summary){animation:none}}
+@supports (corner-shape:squircle){.card,details.opt{corner-shape:squircle;border-radius:32px}}
+details.opt summary{position:relative;display:block;list-style:none;min-height:104px;padding:12px 106px 12px 34px;cursor:pointer}details.opt summary::-webkit-details-marker{display:none}
+details.opt summary img{position:absolute;right:0;top:0;bottom:0;width:92px;height:100%;object-fit:cover}
+@media (min-width:600px){details.opt summary img{width:144px}details.opt summary{padding-right:158px}}
+details.opt summary::after{content:"";position:absolute;left:21px;top:50%;width:6px;height:6px;border-right:1.5px solid var(--muted);border-bottom:1.5px solid var(--muted);transform:translateY(-70%) rotate(45deg);transition:transform .15s}details.opt[open] summary::after{transform:translateY(-30%) rotate(-135deg)}
+details.opt summary b{display:flex;flex-wrap:wrap;align-items:baseline;gap:2px 8px;font:700 16.5px/1.4 var(--fa)}details.opt summary b .lat{font:400 12.5px/1.4 var(--fa);color:var(--muted);letter-spacing:.02em}
+details.opt .facts{display:block;font-size:15px;line-height:1.5;margin:2px 0 1px;color:var(--muted)}
+details.opt .plus,details.opt .catch{display:block;font-size:14.5px;line-height:1.55;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+details.opt .plus{margin-top:5px;color:color-mix(in srgb,var(--ink) 80%,var(--muted))}
+details.opt[open] summary{border-bottom:1px solid var(--rule)}details.opt>ul{margin:0;padding:calc(.8rem + 4px) 30px .8rem 14px;font-size:15px;line-height:1.7}details.opt>ul li{margin:0 0 4px}
+.hero{display:block;width:100%;aspect-ratio:5/2;max-height:260px;object-fit:cover;border-radius:20px;margin:18px 0 0}
+.hero+h1,.hero+.credit+h1{margin-top:18px}
+.credit{display:block;font:11px/1.4 var(--fa);color:var(--muted);margin-top:4px}
+.hero+.credit,.card.top>.credit{position:relative;width:fit-content;padding:30px 56px 8px 12px;color:#fff;background:radial-gradient(farthest-corner at 0% 100%,rgba(0,0,0,.5),rgba(0,0,0,.36) 25%,rgba(0,0,0,.2) 45%,rgba(0,0,0,.075) 62%,transparent 75%);text-shadow:0 0 1px rgba(0,0,0,.15);pointer-events:none}
+.hero+.credit{margin:calc(-38px - 1.4em) auto 0 0;border-bottom-left-radius:20px}@supports (corner-shape:squircle){.hero{corner-shape:squircle;border-radius:32px}.hero+.credit{corner-shape:squircle;border-bottom-left-radius:32px}}
+.gal{display:grid;gap:14px;margin:12px 0}@media (min-width:600px){.gal{grid-template-columns:1fr 1fr}}
+.gal figure{margin:0}.gal img{display:block;width:100%;aspect-ratio:2.39/1;object-fit:cover;border-radius:14px}
+.gal figcaption{font:13.5px/1.6 var(--fa);color:var(--muted);margin-top:6px}
+</style>
+</head>
+<body><div class="wrap">
+<img class="hero" src="hero.jpg" alt="پرواز ۷۴۷ در دل طوفان و رعد و برق، شب">
+<span class="credit">تصویر: تریلر <span class="lat">FLIGHT 747</span></span>
+<h1>CASE 747</h1>
+<p class="kicker">بازی کارآگاهی نوآر و ترسناک، از <span class="lat">Mirsel Studio</span></p>
+<p class="updated">به‌روزرسانی: ۲۹ مهر ۱۴۰۵</p>
+<p class="lede">هواپیماها همین‌طوری غیب نمی‌شوند؛ یکی غیبشان می‌کند. بیست‌وسه سال بعد، کارآگاه مایک وارن پرونده‌ی پرواز ۷۴۷ را دوباره باز می‌کند.</p>
+<ul>
+<li>در حال ساخت با <span class="lat">Unreal Engine</span>. پلتفرم‌ها و تاریخ انتشار بعداً اعلام می‌شود.</li>
+<li>تریلر <a href="#trailer"><span class="lat">FLIGHT 747</span></a> را با زیرنویس فارسی پایین همین صفحه ببینید.</li>
+</ul>
+<nav class="jump"><a href="#story">داستان</a><a href="#characters">شخصیت‌ها</a><a href="#trailer">تریلر</a><a href="#gallery">گالری</a><a href="#studio">استودیو</a></nav>
+
+<h2 id="story">داستان</h2>
+<p class="kicker">ساعت ۱:۱۷ بامداد، بالای طوفان</p>
+<ol class="takeaways">
+<li><div><b>پرواز ۷۴۷ خاموش می‌شود.</b>«هفت‌چهارهفت، اینجا برج... ترانسپوندرت از رادار پرید.» دو دقیقه بعد، هواپیما از صفحه‌ی رادار محو شده. نه سقوطی، نه لاشه‌ای، نه جوابی.</div></li>
+<li><div><b>بیست‌وسه سال بعد.</b>جسد مردی در شهر پیدا می‌شود که یک کارت پرواز در جیبش دارد: پرواز ۷۴۷، به تاریخ همان شبی که هواپیما ناپدید شد.</div></li>
+<li><div><b>پرونده‌ای که هیچ‌وقت بسته نشد.</b>مایک وارن ردّ ماجرا را می‌گیرد: پرونده‌های پدر مرحومش، دفتر شیفتِ کنده‌شده‌ی فرودگاه، و دیواری پر از عکس‌های شماره‌دار.</div></li>
+<li><div><b>حقیقت هیچ‌وقت گم نمی‌شود.</b>فقط گاهی آن‌قدر دیر برمی‌گردد که دیگر کسی باورش نمی‌کند. هر سرنخی که پیدا می‌کنید، بار دوم معنای تازه‌ای دارد.</div></li>
+</ol>
+
+<h2 id="characters">شخصیت‌ها</h2>
+<p class="kicker">روی هر شخصیت بزنید تا بیشتر بخوانید</p>
+<div class="options">
+<p class="group">کارآگاه</p>
+<details class="opt"><summary><img src="corridor.jpg" alt="مردی تنها در انتهای یک راهروی تاریک"><b>مایک وارن <span class="lat">Mike Warren</span></b><span class="facts">کارآگاه ارشد جنایی، ۴۲ ساله</span><span class="plus">«یکی صفحه رو کنده، جیم.»</span><span class="catch">کارآگاهی که نقشش را بازی می‌کنید</span></summary>
+<ul><li>پسر آلن وارن، پلیس کهنه‌کاری که هیچ‌وقت پرواز ۷۴۷ را رها نکرد.</li><li>از وقتی اولین جسد پیدا شد، هر شب خواب آن هواپیما را می‌بیند.</li><li>اول به مدرک اعتماد می‌کند، بعد به آدم‌ها.</li></ul></details>
+<p class="group">آدم‌های دور و برش</p>
+<details class="opt"><summary><img src="duo.jpg" alt="دو کارآگاه با بارانی در خیابانی بارانی"><b>جیم <span class="lat">Jim</span></b><span class="facts">همکار و بهترین دوست مایک</span><span class="plus">«برو خونه مایک. یه کم بخواب.»</span><span class="catch">شوخ‌طبع‌ترین آدم اداره‌ی جنایی</span></summary>
+<ul><li>سال‌هاست در همه‌ی پرونده‌ها پشت مایک ایستاده.</li><li>در بدترین شب‌ها هم شوخی‌اش به راه است.</li><li>معتقد است گذشته باید همان‌جا که هست بماند.</li></ul></details>
+<details class="opt"><summary><img src="radio.jpg" alt="یک رادیوی قدیمی روی میزی پر از کاغذ"><b>آلن وارن <span class="lat">Alan Warren</span></b><span class="facts">پدر مایک، پلیس کهنه‌کار</span><span class="plus">«هواپیما همین‌جوری غیب نمی‌شه، پسرم.»</span><span class="catch">صدایش روی نوارهای قدیمی مانده</span></summary>
+<ul><li>سال‌ها دنبال این بود که بفهمد واقعاً چه بر سر پرواز ۷۴۷ آمد.</li><li>برای پسرش بیشتر سؤال به جا گذاشت تا جواب.</li></ul></details>
+<details class="opt"><summary><img src="store.jpg" alt="کسی در یک فروشگاه کم‌نور با کف شطرنجی"><b>سارا بل <span class="lat">Sarah Bell</span></b><span class="facts">پزشک قانونی</span><span class="plus">«یه کارت پرواز توی جیبش بود.»</span><span class="catch">اولین کسی که می‌بیند چه بلایی سرشان آمده</span></summary>
+<ul><li>همه‌ی جسدهای این پرونده زیر دست او می‌آیند.</li><li>کارت پروازی را پیدا می‌کند که مایک را به ۷۴۷ برمی‌گرداند.</li></ul></details>
+<details class="opt"><summary><img src="airport.jpg" alt="برج مراقبت فرودگاه در یک شب بارانی"><b>ری هارپر <span class="lat">Ray Harper</span></b><span class="facts">مردی از فرودگاهِ آن سال‌ها</span><span class="plus">در خانه‌اش یک دفتر شیفت قدیمی هست</span><span class="catch">یک صفحه از آن شب گم شده</span></summary>
+<ul><li>دفترش شاید تنها سندی باشد از اینکه آن شب چه چیزهایی بازرسی شد.</li><li>کسی مطمئن شده که یک صفحه‌اش کنده شود.</li></ul></details>
+<details class="opt"><summary><img src="wall.jpg" alt="دیواری پر از عکس‌های قاب‌شده زیر یک لامپ لخت"><b>ریچارد بلک‌وود <span class="lat">Richard Blackwood</span></b><span class="facts">اسمی از گذشته</span><span class="plus">پرونده مدام به او برمی‌گردد</span><span class="catch">اینکه او که بود، بخشی از معماست</span></summary>
+<ul><li>کمتر کسی دلش می‌خواهد درباره‌اش حرف بزند.</li><li>اینکه واقعاً چه کسی بود را باید خودتان کشف کنید.</li></ul></details>
+</div>
+
+<h2 id="trailer">تریلر</h2>
+<p class="kicker">تریلر رسمی، ۱ دقیقه و ۳۵ ثانیه، با زیرنویس فارسی</p>
+<div class="card top">
+<video id="t9" controls playsinline preload="metadata" poster="poster.jpg" src="trailer.mp4"></video>
+<h3 class="lat" style="text-align:right">FLIGHT 747</h3>
+<div class="fact">«هفت‌چهارهفت، اینجا برج... ترانسپوندرت از رادار پرید.»</div>
+<div class="fact">هدفون روی گوش، چراغ‌ها خاموش.</div>
+</div>
+
+<h2 id="gallery">گالری</h2>
+<p class="kicker">تصاویری از تریلر و طرح جلد بازی</p>
+<div class="gal">
+<figure><img src="k01.jpg" alt="پرواز ۷۴۷ در طوفان" loading="lazy"><figcaption>پرواز ۷۴۷، در دل طوفان</figcaption></figure>
+<figure><img src="cockpit.jpg" alt="صفحه‌ی ترانسپوندر با عدد ۰۷۴۷" loading="lazy"><figcaption>کد ۰۷۴۷، چند ثانیه پیش از خاموشی</figcaption></figure>
+<figure><img src="city.jpg" alt="شهر در شبی بارانی" loading="lazy"><figcaption>بیست‌وسه سال بعد</figcaption></figure>
+<figure><img src="filecover.jpg" alt="پرونده‌ای با مهر محرمانه: پرواز ۷۴۷" loading="lazy"><figcaption>پرونده‌ی محرمانه</figcaption></figure>
+<figure><img src="fileopen.jpg" alt="فهرست مسافران روی میز" loading="lazy"><figcaption>فهرست مسافران</figcaption></figure>
+<figure><img src="door.jpg" alt="دری نیمه‌باز با رنگ پوسته‌پوسته در اتاقی تاریک" loading="lazy"><figcaption>بعضی درها بی‌دلیل بسته نمانده‌اند</figcaption></figure>
+<figure><img src="stair.jpg" alt="سایه‌ی کسی روی پله‌ها" loading="lazy"><figcaption>کسی روی پله‌هاست</figcaption></figure>
+<figure><img src="mirror.jpg" alt="آینه‌ای ترک‌خورده در یک دستشویی متروکه" loading="lazy"><figcaption>آینه، درست پیش از خاموش شدن چراغ‌ها</figcaption></figure>
+<figure><img src="board.jpg" alt="دو نفر جلوی تابلوی پروازهای فرودگاه" loading="lazy"><figcaption>همه‌ی پروازها نشستند. جز یکی.</figcaption></figure>
+</div>
+
+<h2 id="studio"><span class="lat">Mirsel Studio</span></h2>
+<p class="kicker">سازنده‌ی <span class="lat">CASE 747</span></p>
+<p><span class="lat">CASE 747</span> یک بازی مستقل از <span class="lat">Mirsel Studio</span> است؛ ساخته‌ی امیر و آیسل، که این استودیو را دوتایی با هم ساختند؛ با موتور <span class="lat">Unreal Engine</span>. یک نوآر واقع‌گرا و پر از توطئه: خیابان‌های شبانه، فقط یک نور واقعی در هر اتاق، کف‌های خیس، و پرونده‌ای که هر بار بازش می‌کنید جور دیگری خوانده می‌شود.</p>
+<p>بازی در حال ساخت است. برای تریلر بعدی، پلتفرم‌ها و تاریخ انتشار، <span class="lat">Mirsel Studio</span> را دنبال کنید.</p>
+
+<div class="sources"><b>Mirsel Studio</b><ul><li>همه‌ی حقوق <span class="lat">CASE 747</span> و <span class="lat">FLIGHT 747</span> برای <span class="lat">Mirsel Studio</span> محفوظ است، ۲۰۲۶.</li><li>تصاویر از تریلر <span class="lat">FLIGHT 747</span> و طرح جلد بازی است.</li><li>بازی در حال ساخت است و هر چیزی که اینجا می‌بینید ممکن است تغییر کند.</li></ul></div>
+<footer>&copy; Mirsel Studio</footer>
+</div>
+<script>
+(function(){var v=document.getElementById('t9');if(!v||!window.fetch||!window.URL)return;var s=v.getAttribute('src');fetch(s).then(function(r){return r.blob()}).then(function(b){v.src=URL.createObjectURL(b)}).catch(function(){});})();
+</script>
+</body></html>
